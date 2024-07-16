@@ -19,10 +19,12 @@ Next, let's prepare the Python script file, and run it:
 6. Open the Terminal app, and go to the directory with files using the command: `cd`.
 7. Run the next commands in Terminal:
 
-/*Install the request module, required for running the script*/
-pip3 install requests
+/* Install the request module, required for running the script */
+
+**pip3 install requests**
 
 /*Run script */
-python3 ecwid-download-images-from-csv.py
+
+**python3 ecwid-download-images-from-csv.py**
 
 After that, in the Terminal window, you'll see the image downloading process, and the “downloaded_images” folder will be created, where all images will be kept.
