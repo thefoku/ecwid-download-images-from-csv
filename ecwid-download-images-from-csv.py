@@ -34,7 +34,7 @@ def download_image(url, folder, product_name, row_number, total_rows):
 output_folder = "downloaded_images"
 os.makedirs(output_folder, exist_ok=True)
 
-# Список колонок для чтения ссылок, поменять если колонок меньше
+# Список колонок для чтения ссылок, поменять если колонок меньше или больше
 columns = [
     'product_media_main_image_url',
     'product_media_gallery_image_url_1',
@@ -67,7 +67,7 @@ with open(csvFileName, newline='', encoding='utf-8') as csvfile:
     total_rows = len(rows)
 
     # Используем ThreadPoolExecutor для многопоточности
-    with ThreadPoolExecutor(max_workers=5) as executor:  # Укажите количество потоков (Apple M1 поддерживает до 24 576 потоков, в данном случае можно оставить 5)
+    with ThreadPoolExecutor(max_workers=5) as executor:  # Укажите количество потоков (Процессор Apple M1 поддерживает до 24 576 потоков, в данном случае можно оставить 5)
         futures = [executor.submit(process_row, row, row_number, total_rows) for row_number, row in enumerate(rows, start=1)]
         for future in as_completed(futures):
             try:
