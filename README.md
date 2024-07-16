@@ -1,6 +1,8 @@
 # ecwid-download-images-from-csv
 Python 3 script that downloads images from the exported CSV files from Ecwid store
 
+**How to use:**
+
 First, we need to export the CSV file with your products:
 
 1. Go to **Ecwid > Catalog > Products**.
