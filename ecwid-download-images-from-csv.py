@@ -32,7 +32,7 @@ def download_image(url, folder, product_name, row_number, total_rows):
         print(f"Строка {row_number} из {total_rows} строк: ошибка сохранения {url}: {e}")
 
 # Создаем папку для сохранения изображений, если её нет
-output_folder = "downloaded_images_column_read_plus_10potok"
+output_folder = "downloaded_images"
 os.makedirs(output_folder, exist_ok=True)
 
 # Функция для получения списка колонок, начинающихся на 'product_media_gallery_image_url_'
