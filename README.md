@@ -16,10 +16,9 @@ Next, let's prepare the Python script file, and run it:
 1. Download the latest Python 3 version: https://www.python.org/downloads/    
 2. Open the ecwid-download-images-from-csv.py file with Sublime Text.
 3. In row #7 set your CSV file name instead of "example.csv"
-4. In row #37, next to columns = set the same number of the “product_media_gallery_image_url” columns. (Example in the file)
-5. Save the .py file, and put it and the CSV file in the same directory (folder).
-6. Open the Terminal app, and go to the directory with files using the command: `cd`.
-7. Run the next commands in Terminal:
+4. Save the .py file, and put it and the CSV file in the same directory (folder).
+5. Open the Terminal app, and go to the directory with files using the command: `cd`.
+6. Run the next commands in Terminal:
 
 /* Install the request module, required for running the script */
 
